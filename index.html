@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Fahad Hameed</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Website Loader -->
+<div id="loader">
+    <div class="loader-circle"></div>
+    <h2>Fahad Hameed</h2>
+    <p>Loading Portfolio...</p>
+</div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <a href="#home" class="logo">MY Portfolio</a>
+
+        <nav class="navbar" id="navbar">
+            <button id="themeBtn" class="theme-btn"> 🌙 Dark Mode</button>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm Fahad Hameed</h1>
+
+            <h2>Web Developer</h2>
+
+            <a href="Fahad_Hameed_CV.pdf" download class="cv-btn">Download My CV</a>
+
+            <p>
+                I Create Beautiful And Responsive Websites
+                Using HTML, CSS And JavaScript.
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+            <div class="social-links">
+    <a href="https://github.com/fahadhameed224"target="_blank"rel="noopener noreferrer"aria-label="GitHub">GitHub</a>
+</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <h2 class="heading">About Me</h2>
+
+        <div class="about-content">
+            <p>
+                I am a passionate web development student.
+                I love learning new technologies and creating
+                modern websites.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <h2 class="heading">My Skills</h2>
+
+        <div class="skills-container">
+
+    <div class="skill-box">
+        <h3>HTML</h3>
+        <div class="progress-bar">
+            <div class="progress" data-width="90%">90%</div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <h3>CSS</h3>
+        <div class="progress-bar">
+            <div class="progress" data-width="80%">80%</div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+            <div class="progress" data-width="60%">60%</div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <h3>Responsive Design</h3>
+        <div class="progress-bar">
+            <div class="progress" data-width="70%">70%</div>
+        </div>
+    </div>
+
+</div>
+    </section>
+
+    <!-- Projects Section -->
+   <!-- Projects Section -->
+
+<section class="projects section" id="projects">
+
+    <h2 class="heading">My Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-box">
+            <h3>Portfolio Website</h3>
+
+            <p>
+                A personal portfolio website built
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <button class="project-btn"
+                data-project="portfolio">
+                Live Demo
+            </button>
+
+            <button class="details-btn"
+                data-project="portfolio">
+                Details
+            </button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <h3>Calculator</h3>
+
+            <p>
+                A simple calculator created using
+                JavaScript.
+            </p>
+
+            <button class="project-btn"
+                data-project="calculator">
+                Live Demo
+            </button>
+
+            <button class="details-btn"
+                data-project="calculator">
+                Details
+            </button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+            <h3>Landing Page</h3>
+
+            <p>
+                A modern and responsive landing page.
+            </p>
+
+            <button class="project-btn"
+                data-project="landing">
+                Live Demo
+            </button>
+
+            <button class="details-btn"
+                data-project="landing">
+                Details
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Project Details -->
+    <div id="projectDetails" class="project-details">
+        <h3 id="detailTitle"></h3>
+        <p id="detailText"></p>
+        <button id="closeDetails">Close</button>
+    </div>
+
+</section>
+
+    <!-- Calculator Section -->
+    <section class="calculator section" id="calculator">
+        <h2 class="heading">My Calculator</h2>
+
+        <div class="calculator-box">
+            <input
+                type="text"
+                id="display"
+                placeholder="0"
+                readonly
+                aria-label="Calculator display"
+            >
+
+            <div class="calculator-buttons">
+                <button class="calc-btn clear" data-value="C">C</button>
+                <button class="calc-btn" data-value="DEL">DEL</button>
+                <button class="calc-btn" data-value="%">%</button>
+                <button class="calc-btn operator" data-value="/">÷</button>
+
+                <button class="calc-btn" data-value="7">7</button>
+                <button class="calc-btn" data-value="8">8</button>
+                <button class="calc-btn" data-value="9">9</button>
+                <button class="calc-btn operator" data-value="*">×</button>
+
+                <button class="calc-btn" data-value="4">4</button>
+                <button class="calc-btn" data-value="5">5</button>
+                <button class="calc-btn" data-value="6">6</button>
+                <button class="calc-btn operator" data-value="-">−</button>
+
+                <button class="calc-btn" data-value="1">1</button>
+                <button class="calc-btn" data-value="2">2</button>
+                <button class="calc-btn" data-value="3">3</button>
+                <button class="calc-btn operator" data-value="+">+</button>
+
+                <button class="calc-btn" data-value="0">0</button>
+                <button class="calc-btn" data-value=".">.</button>
+                <button class="calc-btn equal" data-value="=">=</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   <!-- Contact Section -->
+
+<section class="contact section" id="contact">
+
+    <h2 class="heading">Contact Me</h2>
+
+    <p class="contact-intro">
+        Have a question or want to work together?
+        Send me a message!
+    </p>
+
+    <form id="contactForm" class="contact-form">
+
+        <input
+            type="text"
+            id="userName"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="userEmail"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="userMessage"
+            placeholder="Your Message"
+            rows="6"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+        <p id="formMessage"></p>
+
+    </form>
+
+    <p class="contact-number">Contact No: 03408747803</p>
+
+    <a href="tel:03408747803" class="btn">Call Me</a>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            @ 2026 Fahad Hameed | All Rights Reserved
+        </p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
